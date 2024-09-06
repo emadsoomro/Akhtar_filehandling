@@ -1,0 +1,568 @@
+{
+    "file_name": "Aqua Rhythm (B) 70 KG 14-3-2024 (W-6513) Recipe # 4454.xls",
+    "load_size": 70,
+    "machine_type": "UP SYSTEM",
+    "finish": "Aqua Rhythm (B)",
+    "fabric": "W-6513",
+    "recipe_no": 4454,
+    "Fno": 2138,
+    "step": [
+        {
+            "step_no": "STEP",
+            "action": "ACTION",
+            "minutes": 0.0,
+            "litres": 0,
+            "rpm": 0,
+            "temperature": 0,
+            "PH": 0,
+            "TDS": 0,
+            "TSS": 0,
+            "chemicals": [
+                {
+                    "recipe_name": "Chemical Name",
+                    "percentage": 0.0,
+                    "dosage": "Dosage"
+                }
+            ]
+        },
+        {
+            "step_no": 1,
+            "action": "LOAD",
+            "minutes": 5.0,
+            "litres": 0,
+            "rpm": 0,
+            "temperature": 0,
+            "PH": 0,
+            "TDS": 0,
+            "TSS": 0,
+            "chemicals": []
+        },
+        {
+            "step_no": 2,
+            "action": "FILL",
+            "minutes": 1.0,
+            "litres": 600,
+            "rpm": 30,
+            "temperature": 60,
+            "PH": 0,
+            "TDS": 0,
+            "TSS": 0,
+            "chemicals": []
+        },
+        {
+            "step_no": 3,
+            "action": "DESIZE",
+            "minutes": 15.0,
+            "litres": 600,
+            "rpm": 30,
+            "temperature": 60,
+            "PH": 0,
+            "TDS": 0,
+            "TSS": 0,
+            "chemicals": [
+                {
+                    "recipe_name": "Imacol",
+                    "percentage": 2.857143,
+                    "dosage": 2000
+                },
+                {
+                    "recipe_name": "ABS",
+                    "percentage": 2.857143,
+                    "dosage": 2000
+                },
+                {
+                    "recipe_name": "HTL",
+                    "percentage": 1.428571,
+                    "dosage": 1000
+                }
+            ]
+        },
+        {
+            "step_no": 4,
+            "action": "DRAIN",
+            "minutes": 1.0,
+            "litres": 600,
+            "rpm": 30,
+            "temperature": 60,
+            "PH": 0,
+            "TDS": 0,
+            "TSS": 0,
+            "chemicals": []
+        },
+        {
+            "step_no": 11,
+            "action": "FILL",
+            "minutes": 1.0,
+            "litres": 600,
+            "rpm": 27,
+            "temperature": 30,
+            "PH": 0,
+            "TDS": 0,
+            "TSS": 0,
+            "chemicals": []
+        },
+        {
+            "step_no": 12,
+            "action": "RINSE",
+            "minutes": 2.0,
+            "litres": 600,
+            "rpm": 27,
+            "temperature": 30,
+            "PH": 0,
+            "TDS": 0,
+            "TSS": 0,
+            "chemicals": []
+        },
+        {
+            "step_no": 13,
+            "action": "DRAIN",
+            "minutes": 1.0,
+            "litres": 600,
+            "rpm": 27,
+            "temperature": 30,
+            "PH": 0,
+            "TDS": 0,
+            "TSS": 0,
+            "chemicals": []
+        },
+        {
+            "step_no": 8,
+            "action": "FILL",
+            "minutes": 1.0,
+            "litres": 600,
+            "rpm": 27,
+            "temperature": 50,
+            "PH": 0,
+            "TDS": 0,
+            "TSS": 0,
+            "chemicals": []
+        },
+        {
+            "step_no": 9,
+            "action": "ABRADE ",
+            "minutes": 40.0,
+            "litres": 600,
+            "rpm": 27,
+            "temperature": 50,
+            "PH": 0,
+            "TDS": 0,
+            "TSS": 0,
+            "chemicals": [
+                {
+                    "recipe_name": "Round Stone",
+                    "percentage": 85.714286,
+                    "dosage": 60000
+                },
+                {
+                    "recipe_name": "Power Wash Total AK NEW",
+                    "percentage": 0.714286,
+                    "dosage": 500
+                }
+            ]
+        },
+        {
+            "step_no": 10,
+            "action": "DRAIN",
+            "minutes": 1.0,
+            "litres": 600,
+            "rpm": 27,
+            "temperature": 50,
+            "PH": 0,
+            "TDS": 0,
+            "TSS": 0,
+            "chemicals": []
+        },
+        {
+            "step_no": 11,
+            "action": "FILL",
+            "minutes": 1.0,
+            "litres": 500,
+            "rpm": 27,
+            "temperature": 30,
+            "PH": 0,
+            "TDS": 0,
+            "TSS": 0,
+            "chemicals": []
+        },
+        {
+            "step_no": 12,
+            "action": "RINSE",
+            "minutes": 2.0,
+            "litres": 500,
+            "rpm": 27,
+            "temperature": 30,
+            "PH": 0,
+            "TDS": 0,
+            "TSS": 0,
+            "chemicals": []
+        },
+        {
+            "step_no": 13,
+            "action": "DRAIN",
+            "minutes": 1.0,
+            "litres": 500,
+            "rpm": 27,
+            "temperature": 30,
+            "PH": 0,
+            "TDS": 0,
+            "TSS": 0,
+            "chemicals": []
+        },
+        {
+            "step_no": 9,
+            "action": "FILL",
+            "minutes": 2.0,
+            "litres": 50,
+            "rpm": 27,
+            "temperature": 27,
+            "PH": 0,
+            "TDS": 0,
+            "TSS": 0,
+            "chemicals": []
+        },
+        {
+            "step_no": 10,
+            "action": "BATIK",
+            "minutes": 45.0,
+            "litres": 50,
+            "rpm": 27,
+            "temperature": 27,
+            "PH": 0,
+            "TDS": 0,
+            "TSS": 0,
+            "chemicals": [
+                {
+                    "recipe_name": "Potassium Per Magnate",
+                    "percentage": 0.071429,
+                    "dosage": 50
+                }
+            ]
+        },
+        {
+            "step_no": 11,
+            "action": "DRAIN",
+            "minutes": 2.0,
+            "litres": 50,
+            "rpm": 27,
+            "temperature": 27,
+            "PH": 0,
+            "TDS": 0,
+            "TSS": 0,
+            "chemicals": []
+        },
+        {
+            "step_no": 12,
+            "action": "FILL",
+            "minutes": 1.0,
+            "litres": 700,
+            "rpm": 27,
+            "temperature": 50,
+            "PH": 0,
+            "TDS": 0,
+            "TSS": 0,
+            "chemicals": []
+        },
+        {
+            "step_no": 13,
+            "action": "NEUTRAL ",
+            "minutes": 10.0,
+            "litres": 700,
+            "rpm": 27,
+            "temperature": 50,
+            "PH": 0,
+            "TDS": 0,
+            "TSS": 0,
+            "chemicals": [
+                {
+                    "recipe_name": "Meta",
+                    "percentage": 2.142857,
+                    "dosage": 1500
+                }
+            ]
+        },
+        {
+            "step_no": 14,
+            "action": "DRAIN",
+            "minutes": 1.0,
+            "litres": 700,
+            "rpm": 27,
+            "temperature": 50,
+            "PH": 0,
+            "TDS": 0,
+            "TSS": 0,
+            "chemicals": []
+        },
+        {
+            "step_no": 15,
+            "action": "FILL",
+            "minutes": 1.0,
+            "litres": 700,
+            "rpm": 27,
+            "temperature": 30,
+            "PH": 0,
+            "TDS": 0,
+            "TSS": 0,
+            "chemicals": []
+        },
+        {
+            "step_no": 16,
+            "action": "RINSE",
+            "minutes": 2.0,
+            "litres": 700,
+            "rpm": 27,
+            "temperature": 30,
+            "PH": 0,
+            "TDS": 0,
+            "TSS": 0,
+            "chemicals": []
+        },
+        {
+            "step_no": 17,
+            "action": "DRAIN",
+            "minutes": 1.0,
+            "litres": 700,
+            "rpm": 27,
+            "temperature": 30,
+            "PH": 0,
+            "TDS": 0,
+            "TSS": 0,
+            "chemicals": []
+        },
+        {
+            "step_no": 23,
+            "action": "FILL",
+            "minutes": 1.0,
+            "litres": 700,
+            "rpm": 27,
+            "temperature": 50,
+            "PH": 0,
+            "TDS": 0,
+            "TSS": 0,
+            "chemicals": [
+                {
+                    "recipe_name": "ABS",
+                    "percentage": 0.714286,
+                    "dosage": 500
+                }
+            ]
+        },
+        {
+            "step_no": 24,
+            "action": "BLEACH",
+            "minutes": 10.0,
+            "litres": 700,
+            "rpm": 27,
+            "temperature": 50,
+            "PH": 0,
+            "TDS": 0,
+            "TSS": 0,
+            "chemicals": [
+                {
+                    "recipe_name": "Caustic",
+                    "percentage": 0.428571,
+                    "dosage": 300
+                },
+                {
+                    "recipe_name": "Urea",
+                    "percentage": 0.214286,
+                    "dosage": 150
+                },
+                {
+                    "recipe_name": "Hypo",
+                    "percentage": 7.142857,
+                    "dosage": 5000
+                }
+            ]
+        },
+        {
+            "step_no": 25,
+            "action": "DRAIN",
+            "minutes": 1.0,
+            "litres": 700,
+            "rpm": 27,
+            "temperature": 50,
+            "PH": 0,
+            "TDS": 0,
+            "TSS": 0,
+            "chemicals": []
+        },
+        {
+            "step_no": 26,
+            "action": "FILL",
+            "minutes": 1.0,
+            "litres": 700,
+            "rpm": 27,
+            "temperature": 30,
+            "PH": 0,
+            "TDS": 0,
+            "TSS": 0,
+            "chemicals": []
+        },
+        {
+            "step_no": 27,
+            "action": "RINSE",
+            "minutes": 2.0,
+            "litres": 700,
+            "rpm": 27,
+            "temperature": 30,
+            "PH": 0,
+            "TDS": 0,
+            "TSS": 0,
+            "chemicals": []
+        },
+        {
+            "step_no": 28,
+            "action": "DRAIN",
+            "minutes": 1.0,
+            "litres": 700,
+            "rpm": 27,
+            "temperature": 30,
+            "PH": 0,
+            "TDS": 0,
+            "TSS": 0,
+            "chemicals": []
+        },
+        {
+            "step_no": 29,
+            "action": "FILL",
+            "minutes": 1.0,
+            "litres": 700,
+            "rpm": 27,
+            "temperature": 30,
+            "PH": 0,
+            "TDS": 0,
+            "TSS": 0,
+            "chemicals": []
+        },
+        {
+            "step_no": 30,
+            "action": "NEUTRAL ",
+            "minutes": 10.0,
+            "litres": 700,
+            "rpm": 27,
+            "temperature": 30,
+            "PH": 0,
+            "TDS": 0,
+            "TSS": 0,
+            "chemicals": [
+                {
+                    "recipe_name": "Meta",
+                    "percentage": 2.142857,
+                    "dosage": 1500
+                }
+            ]
+        },
+        {
+            "step_no": 31,
+            "action": "DRAIN",
+            "minutes": 1.0,
+            "litres": 700,
+            "rpm": 27,
+            "temperature": 30,
+            "PH": 0,
+            "TDS": 0,
+            "TSS": 0,
+            "chemicals": []
+        },
+        {
+            "step_no": 32,
+            "action": "FILL",
+            "minutes": 1.0,
+            "litres": 700,
+            "rpm": 27,
+            "temperature": 30,
+            "PH": 0,
+            "TDS": 0,
+            "TSS": 0,
+            "chemicals": []
+        },
+        {
+            "step_no": 33,
+            "action": "RINSE",
+            "minutes": 2.0,
+            "litres": 700,
+            "rpm": 27,
+            "temperature": 30,
+            "PH": 0,
+            "TDS": 0,
+            "TSS": 0,
+            "chemicals": []
+        },
+        {
+            "step_no": 34,
+            "action": "DRAIN",
+            "minutes": 1.0,
+            "litres": 700,
+            "rpm": 27,
+            "temperature": 30,
+            "PH": 0,
+            "TDS": 0,
+            "TSS": 0,
+            "chemicals": []
+        },
+        {
+            "step_no": 33,
+            "action": "FILL",
+            "minutes": 1.0,
+            "litres": 500,
+            "rpm": 27,
+            "temperature": 50,
+            "PH": 0,
+            "TDS": 0,
+            "TSS": 0,
+            "chemicals": [
+                {
+                    "recipe_name": "Flavine",
+                    "percentage": 0.004286,
+                    "dosage": 3
+                }
+            ]
+        },
+        {
+            "step_no": 34,
+            "action": " TINT+SOFTENING",
+            "minutes": 10.0,
+            "litres": 500,
+            "rpm": 27,
+            "temperature": 50,
+            "PH": 0,
+            "TDS": 0,
+            "TSS": 0,
+            "chemicals": [
+                {
+                    "recipe_name": "Brown",
+                    "percentage": 0.045714,
+                    "dosage": 32
+                },
+                {
+                    "recipe_name": "WD",
+                    "percentage": 0.214286,
+                    "dosage": 150
+                },
+                {
+                    "recipe_name": "Salt",
+                    "percentage": 5.714286,
+                    "dosage": 4000
+                }
+            ]
+        },
+        {
+            "step_no": 35,
+            "action": "DRAIN",
+            "minutes": 1.0,
+            "litres": 500,
+            "rpm": 27,
+            "temperature": 50,
+            "PH": 0,
+            "TDS": 0,
+            "TSS": 0,
+            "chemicals": [
+                {
+                    "recipe_name": "Softouch OET",
+                    "percentage": 2.857143,
+                    "dosage": 2000
+                }
+            ]
+        }
+    ]
+}

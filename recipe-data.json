@@ -1,0 +1,865 @@
+{
+    "Load_Size": 70,
+    "Machine Type": "UP SYSTEM",
+    "Finish": "Aqua Rhythm (B)",
+    "Fabric": "W-6513",
+    "Recipe": 4454,
+    "FNO": 2138,
+    "1": {
+        "STEP": "STEP",
+        "ACTION": "ACTION",
+        "MINS.": "MINS.",
+        "LTRs": "LTRs",
+        "RPM": "RPM",
+        "Centigrade": "Centigrade",
+        "PH": "PH",
+        "TDS": "TDS",
+        "TSS": "TSS",
+        "Chemicals": [
+            {
+                "name": "Chemical Name",
+                "%": "%",
+                "Dosage": "Dosage"
+            }
+        ]
+    },
+    "2": {
+        "STEP": 1,
+        "ACTION": "LOAD",
+        "MINS.": 5,
+        "LTRs": "LTRs",
+        "RPM": "RPM",
+        "Centigrade": "Centigrade",
+        "PH": "None",
+        "TDS": "None",
+        "TSS": "None",
+        "Chemicals": [
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            }
+        ]
+    },
+    "3": {
+        "STEP": 2,
+        "ACTION": "FILL",
+        "MINS.": 1,
+        "LTRs": 600,
+        "RPM": 30,
+        "Centigrade": 60,
+        "PH": "None",
+        "TDS": "None",
+        "TSS": "None",
+        "Chemicals": [
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            }
+        ]
+    },
+    "4": {
+        "STEP": 3,
+        "ACTION": "DESIZE",
+        "MINS.": 15,
+        "LTRs": 600,
+        "RPM": 30,
+        "Centigrade": 60,
+        "PH": "None",
+        "TDS": "None",
+        "TSS": "None",
+        "Chemicals": [
+            {
+                "name": "Imacol",
+                "%": 2.857142857142857,
+                "Dosage": 2000
+            },
+            {
+                "name": "ABS",
+                "%": 2.857142857142857,
+                "Dosage": 2000
+            },
+            {
+                "name": "HTL",
+                "%": 1.4285714285714286,
+                "Dosage": 1000
+            }
+        ]
+    },
+    "7": {
+        "STEP": 4,
+        "ACTION": "DRAIN",
+        "MINS.": 1,
+        "LTRs": 600,
+        "RPM": 30,
+        "Centigrade": 60,
+        "PH": "None",
+        "TDS": "None",
+        "TSS": "None",
+        "Chemicals": [
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            }
+        ]
+    },
+    "8": {
+        "STEP": 11,
+        "ACTION": "FILL",
+        "MINS.": 1,
+        "LTRs": 600,
+        "RPM": 27,
+        "Centigrade": 30,
+        "PH": "None",
+        "TDS": "None",
+        "TSS": "None",
+        "Chemicals": [
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            }
+        ]
+    },
+    "9": {
+        "STEP": 12,
+        "ACTION": "RINSE",
+        "MINS.": 2,
+        "LTRs": 600,
+        "RPM": 27,
+        "Centigrade": 30,
+        "PH": "None",
+        "TDS": "None",
+        "TSS": "None",
+        "Chemicals": [
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            },
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            },
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            }
+        ]
+    },
+    "12": {
+        "STEP": 13,
+        "ACTION": "DRAIN",
+        "MINS.": 1,
+        "LTRs": 600,
+        "RPM": 27,
+        "Centigrade": 30,
+        "PH": "None",
+        "TDS": "None",
+        "TSS": "None",
+        "Chemicals": [
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            }
+        ]
+    },
+    "13": {
+        "STEP": 8,
+        "ACTION": "FILL",
+        "MINS.": 1,
+        "LTRs": 600,
+        "RPM": 27,
+        "Centigrade": 50,
+        "PH": "None",
+        "TDS": "None",
+        "TSS": "None",
+        "Chemicals": [
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            }
+        ]
+    },
+    "14": {
+        "STEP": 9,
+        "ACTION": "ABRADE ",
+        "MINS.": 40,
+        "LTRs": 600,
+        "RPM": 27,
+        "Centigrade": 50,
+        "PH": "None",
+        "TDS": "None",
+        "TSS": "None",
+        "Chemicals": [
+            {
+                "name": "Round Stone",
+                "%": 85.71428571428571,
+                "Dosage": 60000
+            },
+            {
+                "name": "Power Wash Total AK NEW",
+                "%": 0.7142857142857143,
+                "Dosage": 500
+            },
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            }
+        ]
+    },
+    "17": {
+        "STEP": 10,
+        "ACTION": "DRAIN",
+        "MINS.": 1,
+        "LTRs": 600,
+        "RPM": 27,
+        "Centigrade": 50,
+        "PH": "None",
+        "TDS": "None",
+        "TSS": "None",
+        "Chemicals": [
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            }
+        ]
+    },
+    "18": {
+        "STEP": 11,
+        "ACTION": "FILL",
+        "MINS.": 1,
+        "LTRs": 500,
+        "RPM": 27,
+        "Centigrade": 30,
+        "PH": "None",
+        "TDS": "None",
+        "TSS": "None",
+        "Chemicals": [
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            }
+        ]
+    },
+    "19": {
+        "STEP": 12,
+        "ACTION": "RINSE",
+        "MINS.": 2,
+        "LTRs": 500,
+        "RPM": 27,
+        "Centigrade": 30,
+        "PH": "None",
+        "TDS": "None",
+        "TSS": "None",
+        "Chemicals": [
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            },
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            },
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            }
+        ]
+    },
+    "22": {
+        "STEP": 13,
+        "ACTION": "DRAIN",
+        "MINS.": 1,
+        "LTRs": 500,
+        "RPM": 27,
+        "Centigrade": 30,
+        "PH": "None",
+        "TDS": "None",
+        "TSS": "None",
+        "Chemicals": [
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            },
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            },
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            },
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            },
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            }
+        ]
+    },
+    "27": {
+        "STEP": 9,
+        "ACTION": "FILL",
+        "MINS.": 2,
+        "LTRs": 50,
+        "RPM": 27,
+        "Centigrade": 27,
+        "PH": "None",
+        "TDS": "None",
+        "TSS": "None",
+        "Chemicals": [
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            }
+        ]
+    },
+    "28": {
+        "STEP": 10,
+        "ACTION": "BATIK",
+        "MINS.": 45,
+        "LTRs": 50,
+        "RPM": 27,
+        "Centigrade": 27,
+        "PH": "None",
+        "TDS": "None",
+        "TSS": "None",
+        "Chemicals": [
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            },
+            {
+                "name": "Potassium Per Magnate",
+                "%": 0.07142857142857142,
+                "Dosage": 50
+            },
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            }
+        ]
+    },
+    "31": {
+        "STEP": 11,
+        "ACTION": "DRAIN",
+        "MINS.": 2,
+        "LTRs": 50,
+        "RPM": 27,
+        "Centigrade": 27,
+        "PH": "None",
+        "TDS": "None",
+        "TSS": "None",
+        "Chemicals": [
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            }
+        ]
+    },
+    "32": {
+        "STEP": 12,
+        "ACTION": "FILL",
+        "MINS.": 1,
+        "LTRs": 700,
+        "RPM": 27,
+        "Centigrade": 50,
+        "PH": "None",
+        "TDS": "None",
+        "TSS": "None",
+        "Chemicals": [
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            }
+        ]
+    },
+    "33": {
+        "STEP": 13,
+        "ACTION": "NEUTRAL ",
+        "MINS.": 10,
+        "LTRs": 700,
+        "RPM": 27,
+        "Centigrade": 50,
+        "PH": "None",
+        "TDS": "None",
+        "TSS": "None",
+        "Chemicals": [
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            },
+            {
+                "name": "Meta",
+                "%": 2.142857142857143,
+                "Dosage": 1500
+            },
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            }
+        ]
+    },
+    "36": {
+        "STEP": 14,
+        "ACTION": "DRAIN",
+        "MINS.": 1,
+        "LTRs": 700,
+        "RPM": 27,
+        "Centigrade": 50,
+        "PH": "None",
+        "TDS": "None",
+        "TSS": "None",
+        "Chemicals": [
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            }
+        ]
+    },
+    "37": {
+        "STEP": 15,
+        "ACTION": "FILL",
+        "MINS.": 1,
+        "LTRs": 700,
+        "RPM": 27,
+        "Centigrade": 30,
+        "PH": "None",
+        "TDS": "None",
+        "TSS": "None",
+        "Chemicals": [
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            }
+        ]
+    },
+    "38": {
+        "STEP": 16,
+        "ACTION": "RINSE",
+        "MINS.": 2,
+        "LTRs": 700,
+        "RPM": 27,
+        "Centigrade": 30,
+        "PH": "None",
+        "TDS": "None",
+        "TSS": "None",
+        "Chemicals": [
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            },
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            },
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            }
+        ]
+    },
+    "41": {
+        "STEP": 17,
+        "ACTION": "DRAIN",
+        "MINS.": 1,
+        "LTRs": 700,
+        "RPM": 27,
+        "Centigrade": 30,
+        "PH": "None",
+        "TDS": "None",
+        "TSS": "None",
+        "Chemicals": [
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            },
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            },
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            }
+        ]
+    },
+    "44": {
+        "STEP": 23,
+        "ACTION": "FILL",
+        "MINS.": 1,
+        "LTRs": 700,
+        "RPM": 27,
+        "Centigrade": 50,
+        "PH": "None",
+        "TDS": "None",
+        "TSS": "None",
+        "Chemicals": [
+            {
+                "name": "ABS",
+                "%": 0.7142857142857143,
+                "Dosage": 500
+            }
+        ]
+    },
+    "45": {
+        "STEP": 24,
+        "ACTION": "BLEACH",
+        "MINS.": 10,
+        "LTRs": 700,
+        "RPM": 27,
+        "Centigrade": 50,
+        "PH": "None",
+        "TDS": "None",
+        "TSS": "None",
+        "Chemicals": [
+            {
+                "name": "Caustic",
+                "%": 0.4285714285714286,
+                "Dosage": 300
+            },
+            {
+                "name": "Urea",
+                "%": 0.2142857142857143,
+                "Dosage": 150
+            },
+            {
+                "name": "Hypo",
+                "%": 7.142857142857142,
+                "Dosage": 5000
+            }
+        ]
+    },
+    "48": {
+        "STEP": 25,
+        "ACTION": "DRAIN",
+        "MINS.": 1,
+        "LTRs": 700,
+        "RPM": 27,
+        "Centigrade": 50,
+        "PH": "None",
+        "TDS": "None",
+        "TSS": "None",
+        "Chemicals": [
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            }
+        ]
+    },
+    "49": {
+        "STEP": 26,
+        "ACTION": "FILL",
+        "MINS.": 1,
+        "LTRs": 700,
+        "RPM": 27,
+        "Centigrade": 30,
+        "PH": "None",
+        "TDS": "None",
+        "TSS": "None",
+        "Chemicals": [
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            }
+        ]
+    },
+    "50": {
+        "STEP": 27,
+        "ACTION": "RINSE",
+        "MINS.": 2,
+        "LTRs": 700,
+        "RPM": 27,
+        "Centigrade": 30,
+        "PH": "None",
+        "TDS": "None",
+        "TSS": "None",
+        "Chemicals": [
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            },
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            },
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            }
+        ]
+    },
+    "53": {
+        "STEP": 28,
+        "ACTION": "DRAIN",
+        "MINS.": 1,
+        "LTRs": 700,
+        "RPM": 27,
+        "Centigrade": 30,
+        "PH": "None",
+        "TDS": "None",
+        "TSS": "None",
+        "Chemicals": [
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            }
+        ]
+    },
+    "54": {
+        "STEP": 29,
+        "ACTION": "FILL",
+        "MINS.": 1,
+        "LTRs": 700,
+        "RPM": 27,
+        "Centigrade": 30,
+        "PH": "None",
+        "TDS": "None",
+        "TSS": "None",
+        "Chemicals": [
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            }
+        ]
+    },
+    "55": {
+        "STEP": 30,
+        "ACTION": "NEUTRAL ",
+        "MINS.": 10,
+        "LTRs": 700,
+        "RPM": 27,
+        "Centigrade": 30,
+        "PH": "None",
+        "TDS": "None",
+        "TSS": "None",
+        "Chemicals": [
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            },
+            {
+                "name": "Meta",
+                "%": 2.142857142857143,
+                "Dosage": 1500
+            },
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            }
+        ]
+    },
+    "58": {
+        "STEP": 31,
+        "ACTION": "DRAIN",
+        "MINS.": 1,
+        "LTRs": 700,
+        "RPM": 27,
+        "Centigrade": 30,
+        "PH": "None",
+        "TDS": "None",
+        "TSS": "None",
+        "Chemicals": [
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            }
+        ]
+    },
+    "59": {
+        "STEP": 32,
+        "ACTION": "FILL",
+        "MINS.": 1,
+        "LTRs": 700,
+        "RPM": 27,
+        "Centigrade": 30,
+        "PH": "None",
+        "TDS": "None",
+        "TSS": "None",
+        "Chemicals": [
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            }
+        ]
+    },
+    "60": {
+        "STEP": 33,
+        "ACTION": "RINSE",
+        "MINS.": 2,
+        "LTRs": 700,
+        "RPM": 27,
+        "Centigrade": 30,
+        "PH": "None",
+        "TDS": "None",
+        "TSS": "None",
+        "Chemicals": [
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            },
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            },
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            }
+        ]
+    },
+    "63": {
+        "STEP": 34,
+        "ACTION": "DRAIN",
+        "MINS.": 1,
+        "LTRs": 700,
+        "RPM": 27,
+        "Centigrade": 30,
+        "PH": "None",
+        "TDS": "None",
+        "TSS": "None",
+        "Chemicals": [
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            }
+        ]
+    },
+    "64": {
+        "STEP": 33,
+        "ACTION": "FILL",
+        "MINS.": 1,
+        "LTRs": 500,
+        "RPM": 27,
+        "Centigrade": 50,
+        "PH": "None",
+        "TDS": "None",
+        "TSS": "None",
+        "Chemicals": [
+            {
+                "name": "Flavine",
+                "%": 0.004285714285714286,
+                "Dosage": 3
+            }
+        ]
+    },
+    "65": {
+        "STEP": 34,
+        "ACTION": " TINT+SOFTENING",
+        "MINS.": 10,
+        "LTRs": 500,
+        "RPM": 27,
+        "Centigrade": 50,
+        "PH": "None",
+        "TDS": "None",
+        "TSS": "None",
+        "Chemicals": [
+            {
+                "name": "Brown",
+                "%": 0.045714285714285714,
+                "Dosage": 32
+            },
+            {
+                "name": "WD",
+                "%": 0.2142857142857143,
+                "Dosage": 150
+            },
+            {
+                "name": "Salt",
+                "%": 5.714285714285714,
+                "Dosage": 4000
+            }
+        ]
+    },
+    "68": {
+        "STEP": 35,
+        "ACTION": "DRAIN",
+        "MINS.": 1,
+        "LTRs": 500,
+        "RPM": 27,
+        "Centigrade": 50,
+        "PH": "None",
+        "TDS": "None",
+        "TSS": "None",
+        "Chemicals": [
+            {
+                "name": "Softouch OET",
+                "%": 2.857142857142857,
+                "Dosage": 2000
+            }
+        ]
+    },
+    "69": {
+        "STEP": 45,
+        "ACTION": "UnLoad",
+        "MINS.": 5,
+        "LTRs": 500,
+        "RPM": 27,
+        "Centigrade": 50,
+        "PH": "None",
+        "TDS": "None",
+        "TSS": "None",
+        "Chemicals": [
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            },
+            {
+                "name": "None",
+                "%": "None",
+                "Dosage": "None"
+            }
+        ]
+    }
+}
