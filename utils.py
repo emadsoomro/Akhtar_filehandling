@@ -93,22 +93,42 @@ def read_data(file, filename):
             }
             stepID = stepID + 1
 
-            for j in i.get('Chemicals', []):
-                # Safely convert the percentage to a float, defaulting to 0.0 if conversion fails
-                try:
-                    percentage = round(float(j['%']), 6)
-                except ValueError:
-                    percentage = 0.0
+        elif isinstance(i, dict) and i.get('ACTION') == 'UnLoad':
+            processed_step = {
+                'step_id': stepID,
+                'step_no': i.get('STEP', 'None') if i.get('STEP', 'None') not in [None, "None"] else 0,
+                'action': i.get('ACTION', 'None'),
+                'minutes': 0.0 if i.get('MINS.') in ["MINS.", "None", None] else round(float(i['MINS.']), 1),
+                'litres': 0,
+                'rpm': 0,
+                'temperature': 0,
+                'PH': 0,
+                'LR': 0,
+                'TDS': 0,
+                'TSS': 0,
+                'chemicals': []
+            }
+            stepID = stepID + 1
 
-                if j['name'] != 'None':
-                    chemical = {
-                        'recipe_name': j['name'],
-                        'percentage': percentage,
-                        'dosage': j['Dosage'] if j['Dosage'] not in [None, "None"] else 0,
-                    }
-                    processed_step['chemicals'].append(chemical)
+        else:
+            continue
 
-            modified_chemicals.append(processed_step)
+        for j in i.get('Chemicals', []):
+            # Safely convert the percentage to a float, defaulting to 0.0 if conversion fails
+            try:
+                percentage = round(float(j['%']), 6)
+            except ValueError:
+                percentage = 0.0
+
+            if j['name'] != 'None':
+                chemical = {
+                    'recipe_name': j['name'],
+                    'percentage': percentage,
+                    'dosage': j['Dosage'] if j['Dosage'] not in [None, "None"] else 0,
+                }
+                processed_step['chemicals'].append(chemical)
+
+        modified_chemicals.append(processed_step)
 
     # Construct the final recipe data
     recipe = {
