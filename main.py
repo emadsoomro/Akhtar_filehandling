@@ -127,6 +127,7 @@ def upload_chemicals(files: List[UploadFile] = File(...)):
     for file in files:
         try:
             file = pd.read_excel(file.file)
+            file = file.astype('object')
             file.fillna("", inplace=True)
             file_dict = file.to_dict(orient="records")
             return {"chemicals" : list(file_dict)}
