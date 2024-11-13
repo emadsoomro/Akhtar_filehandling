@@ -133,12 +133,11 @@ def upload_chemicals(files: List[UploadFile] = File(...)):
             file = file.astype('object')
             file.fillna("", inplace=True)
             file_dict = file.to_dict(orient="records")
-            chemical_data = {"filename":file_name, "chemical_data": file_dict}
-            chemicals.append(chemical_data)
+            chemicals.append(file_dict)
 
         except json.JSONDecodeError:
             failed_files.append(file_name)
         except Exception as e:
             failed_files.append(file_name)
 
-    return {"chemicals": chemicals, "failed_files": failed_files}
+    return {"chemicals": chemicals}
