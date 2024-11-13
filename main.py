@@ -124,15 +124,21 @@ async def get_nexus_data(status : str = Header(...),
 
 @app.post("/upload-chemicals/")
 def upload_chemicals(files: List[UploadFile] = File(...)):
+    chemicals = []
+    failed_files = []
     for file in files:
+        file_name = file.filename
         try:
             file = pd.read_excel(file.file)
             file = file.astype('object')
             file.fillna("", inplace=True)
             file_dict = file.to_dict(orient="records")
-            return {"chemicals" : list(file_dict)}
+            chemical_data = {"filename":file_name, "chemical_data": file_dict}
+            chemicals.append(chemical_data)
 
         except json.JSONDecodeError:
-            return JSONResponse(content={"error": "Invalid JSON data"}, status_code=400)
+            failed_files.append(file_name)
         except Exception as e:
-            return JSONResponse(content={"error": str(file.filename)}, status_code=500)
+            failed_files.append(file_name)
+
+    return {"chemicals": chemicals, "failed_files": failed_files}
