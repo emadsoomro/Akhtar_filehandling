@@ -124,20 +124,26 @@ async def get_nexus_data(status : str = Header(...),
 
 @app.post("/upload-chemicals/")
 def upload_chemicals(files: List[UploadFile] = File(...)):
-    chemicals = []
-    failed_files = []
     for file in files:
-        file_name = file.filename
         try:
             file = pd.read_excel(file.file)
-            file = file.astype('object')
-            file.fillna("", inplace=True)
+            new_headers = {'Washing Name': 'name', 'FULL_NAME': 'full_name', 'Cost_PerKG': 'costPerKg',
+                           'KG_Per_Can': 'kgPerCan', 'Cost_per_Unit_Of_usage': 'costPerUnit', 'Cost_per_UOM': 'costUOM',
+                           'TYPE & USE': 'typeAndUse', 'Unit Used': 'unitUsed', 'Unit Conversion': 'unitConversion'}
+
+            for old_name, new_name in new_headers.items():
+                file.rename(columns={old_name: new_name}, inplace=True)
+
+            for column in file.columns:
+                if file[column].dtype == 'object':  # Check for string (object) columns
+                    file[column].fillna("", inplace=True)
+                elif pd.api.types.is_numeric_dtype(file[column]):  # Check for numeric columns
+                    file[column].fillna(0, inplace=True)
             file_dict = file.to_dict(orient="records")
-            chemicals.append(file_dict)
+            return {"chemicals" : list(file_dict)}
 
         except json.JSONDecodeError:
-            failed_files.append(file_name)
+            return JSONResponse(content={"error": "Invalid JSON data"}, status_code=400)
         except Exception as e:
-            failed_files.append(file_name)
+            return JSONResponse(content={"error": str(file.filename)}, status_code=500)
 
-    return {"chemicals": chemicals}
