@@ -126,9 +126,9 @@ async def get_nexus_data(status : str = Header(...),
 def upload_chemicals(files: List[UploadFile] = File(...)):
     for file in files:
         try:
-            file = pd.read_excel(file.file)
+            file = pd.read_excel(file.file, na_values=[""], keep_default_na=False)
             new_headers = {'Washing Name': 'name', 'FULL_NAME': 'full_name', 'Cost_PerKG': 'costPerKg',
-                           'KG_Per_Can': 'kgPerCan', 'Cost_per_Unit_Of_usage': 'costPerUnit', 'Cost_per_UOM': 'costUOM',
+                           'KG_Per_Can': 'kgPerCan', 'Cost_per_Unit_Of_usage': 'costPerUnit', 'Cost_per_UOM': 'costUom',
                            'TYPE & USE': 'typeAndUse', 'Unit Used': 'unitUsed', 'Unit Conversion': 'unitConversion'}
 
             for old_name, new_name in new_headers.items():
@@ -146,4 +146,3 @@ def upload_chemicals(files: List[UploadFile] = File(...)):
             return JSONResponse(content={"error": "Invalid JSON data"}, status_code=400)
         except Exception as e:
             return JSONResponse(content={"error": str(file.filename)}, status_code=500)
-
