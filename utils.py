@@ -130,6 +130,17 @@ def read_data(file, filename):
 
         modified_chemicals.append(processed_step)
 
+    modified_chemicals = modified_chemicals[1:]
+    modified_chemicals_result = []
+    for ind in range(len(modified_chemicals)):
+        modified_action = modified_chemicals[ind]["action"]
+        if modified_action in ["FILL", "fill"]:
+            modified_chemicals[ind].update({"modified_action":modified_chemicals[ind + 1]["action"]})
+        elif modified_action in ["DRAIN", "drain"]:
+            modified_chemicals[ind].update({"modified_action":modified_chemicals[ind - 1]["action"]})
+        else:
+            modified_chemicals[ind].update({"modified_action": modified_chemicals[ind]["action"]})
+
     # Construct the final recipe data
     recipe = {
         'file_name': filename,
@@ -139,8 +150,9 @@ def read_data(file, filename):
         'fabric': data_json.get('Fabric', 'None'),
         'recipe_no': data_json.get('Recipe', 'None'),
         'Fno': data_json.get('FNO', 'None'),
-        'step': modified_chemicals[1:]
+        'step': modified_chemicals
     }
 
     return recipe
 
+# read_data("C:\\Users\\admin\\Downloads\\Working Late (F) 120 KG 20-5-2024 (IDS-10918-MW08) Recipe # 4633.xls","test")
