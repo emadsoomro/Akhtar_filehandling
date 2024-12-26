@@ -126,27 +126,51 @@ async def get_nexus_data(status : str = Header(...),
 def upload_chemicals(files: List[UploadFile] = File(...)):
     for file in files:
         try:
-            file = pd.read_excel(file.file, na_values=[""], keep_default_na=False)
-            headers = ['Washing Name', 'FULL_NAME', 'Cost_PerKG',
+            df_file = pd.read_excel(file.file, na_values=[""], keep_default_na=False)
+            headers_1 = ['Washing Name', 'FULL_NAME', 'Cost_PerKG',
                            'KG_Per_Can', 'Cost_per_Unit_Of_usage', 'Cost_per_UOM',
                            'TYPE & USE', 'Unit Used', 'Unit Conversion']
-            if list(file.columns) == headers:
+
+            if list(df_file.columns) == headers_1:
                 new_headers = {'Washing Name': 'name', 'FULL_NAME': 'full_name', 'Cost_PerKG': 'costPerKg',
                                'KG_Per_Can': 'kgPerCan', 'Cost_per_Unit_Of_usage': 'costPerUnit', 'Cost_per_UOM': 'costUom',
                                'TYPE & USE': 'typeAndUse', 'Unit Used': 'unitUsed', 'Unit Conversion': 'unitConversion'}
 
                 for old_name, new_name in new_headers.items():
-                    file.rename(columns={old_name: new_name}, inplace=True)
+                    df_file.rename(columns={old_name: new_name}, inplace=True)
 
-                for column in file.columns:
-                    if file[column].dtype == 'object':  # Check for string (object) columns
-                        file[column].fillna("", inplace=True)
-                    elif pd.api.types.is_numeric_dtype(file[column]):  # Check for numeric columns
-                        file[column].fillna(0, inplace=True)
-                file_dict = file.to_dict(orient="records")
+                for column in df_file.columns:
+                    if df_file[column].dtype == 'object':  # Check for string (object) columns
+                        df_file[column].fillna("", inplace=True)
+                    elif pd.api.types.is_numeric_dtype(df_file[column]):  # Check for numeric columns
+                        df_file[column].fillna(0, inplace=True)
+                file_dict = df_file.to_dict(orient="records")
                 return {"chemicals" : list(file_dict)}
+
             else:
-                return JSONResponse(content={"error": "Invalid file format"}, status_code=500)
+                df_file = pd.read_excel(file.file, sheet_name="Order", na_values=[""], keep_default_na=False)
+                headers_2 = ['Stock Sheet Chemical', 'Recipe Chemical', 'TYPE & USE', 'Cost_PerKG', 'KG_Per_Can', 'Free',
+                             'On Order', 'Total', 'Requirement', 'Order', 'Boxes', 'Cost']
+                df_file.columns = df_file.iloc[0]
+                file_headers = list(df_file.columns)[:12]
+                if file_headers == headers_2:
+                    new_headers = {'Recipe Chemical': 'name', 'Stock Sheet Chemical': 'full_name',
+                                   'Cost_PerKG': 'costPerKg', 'KG_Per_Can': 'kgPerCan', 'Free': 'free',
+                                   'Cost': 'cost', 'TYPE & USE': 'typeAndUse', 'On Order': 'onOrder',
+                                   'Total': 'total', 'Requirement': 'requirement', 'Order': 'order', 'Boxes': 'boxes'}
+
+                    df_file = df_file.iloc[1:, :12]
+                    for old_name, new_name in new_headers.items():
+                        df_file.rename(columns={old_name: new_name}, inplace=True)
+
+                    for column in df_file.columns:
+                        df_file[column].fillna(0, inplace=True)
+                    file_dict = df_file.to_dict(orient="records")
+                    return {"chemicals" : list(file_dict)}
+
+                else:
+                    return JSONResponse(content={"error": "Invalid file format"}, status_code=500)
+
         except json.JSONDecodeError:
             return JSONResponse(content={"error": "Invalid JSON data"}, status_code=400)
         except Exception as e:
