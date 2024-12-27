@@ -163,8 +163,12 @@ def upload_chemicals(files: List[UploadFile] = File(...)):
                     for old_name, new_name in new_headers.items():
                         df_file.rename(columns={old_name: new_name}, inplace=True)
 
+                    df_file['full_name'].fillna("", inplace=True)
+                    df_file['name'].fillna("", inplace=True)
+                    df_file['type_and_use'].fillna("", inplace=True)
                     for column in df_file.columns:
                         df_file[column].fillna(0, inplace=True)
+
                     file_dict = df_file.to_dict(orient="records")
                     return {"chemicals" : list(file_dict)}
 
