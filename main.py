@@ -132,9 +132,9 @@ def upload_chemicals(files: List[UploadFile] = File(...)):
                            'TYPE & USE', 'Unit Used', 'Unit Conversion']
 
             if list(df_file.columns) == headers_1:
-                new_headers = {'Washing Name': 'name', 'FULL_NAME': 'full_name', 'Cost_PerKG': 'costPerKg',
-                               'KG_Per_Can': 'kgPerCan', 'Cost_per_Unit_Of_usage': 'costPerUnit', 'Cost_per_UOM': 'costUom',
-                               'TYPE & USE': 'typeAndUse', 'Unit Used': 'unitUsed', 'Unit Conversion': 'unitConversion'}
+                new_headers = {'Washing Name': 'name', 'FULL_NAME': 'full_name', 'Cost_PerKG': 'cost_per_kg',
+                               'KG_Per_Can': 'kg_per_can', 'Cost_per_Unit_Of_usage': 'cost_per_unit', 'Cost_per_UOM': 'cost_uom',
+                               'TYPE & USE': 'type_and_use', 'Unit Used': 'unit_used', 'Unit Conversion': 'unit_conversion'}
 
                 for old_name, new_name in new_headers.items():
                     df_file.rename(columns={old_name: new_name}, inplace=True)
@@ -155,8 +155,8 @@ def upload_chemicals(files: List[UploadFile] = File(...)):
                 file_headers = list(df_file.columns)[:12]
                 if file_headers == headers_2:
                     new_headers = {'Recipe Chemical': 'name', 'Stock Sheet Chemical': 'full_name',
-                                   'Cost_PerKG': 'costPerKg', 'KG_Per_Can': 'kgPerCan', 'Free': 'free',
-                                   'Cost': 'cost', 'TYPE & USE': 'typeAndUse', 'On Order': 'onOrder',
+                                   'Cost_PerKG': 'cost_per_kg', 'KG_Per_Can': 'kg_per_can', 'Free': 'free',
+                                   'Cost': 'cost', 'TYPE & USE': 'type_and_use', 'On Order': 'on_order',
                                    'Total': 'total', 'Requirement': 'requirement', 'Order': 'order', 'Boxes': 'boxes'}
 
                     df_file = df_file.iloc[1:, :12]
