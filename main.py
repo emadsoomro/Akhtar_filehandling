@@ -168,8 +168,8 @@ def upload_chemicals(files: List[UploadFile] = File(...)):
                     df_file['type_and_use'].fillna("", inplace=True)
                     for column in df_file.columns:
                         df_file[column].fillna(0, inplace=True)
-
-                    file_dict = df_file.to_dict(orient="records")
+                    df_cleaned = df_file[df_file['name'].notna() & (df_file['name'] != "")]
+                    file_dict = df_cleaned.to_dict(orient="records")
                     return {"chemicals" : list(file_dict)}
 
                 else:
