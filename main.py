@@ -11,7 +11,7 @@ import utils
 import asyncpg
 import pandas as pd
 
-DATABASE_URL = "postgresql://saim:R2_RkmUt3xc59Gjzuhn33A@joking-egret-7111.8nk.cockroachlabs.cloud:26257/defaultdb?sslmode=verify-full&sslrootcert=./cert/root.crt"
+DATABASE_URL = "postgres://akhtar11:9T0NMeQlomBAVtZ4_Q9RlA@grim-oribi-16146.8nj.gcp-europe-west1.cockroachlabs.cloud:26257/dev_db?sslmode=require"
 
 app = FastAPI()
 
